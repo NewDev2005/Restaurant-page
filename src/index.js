@@ -1,6 +1,7 @@
 import './stylesheet.css';
-import { initialPageLoad, enableMenuBtn } from './main.js';
+import { initialPageLoad, enableMenuBtn, enableHomeBtn } from './main.js';
 
 
 initialPageLoad();
+enableHomeBtn();
 enableMenuBtn();
