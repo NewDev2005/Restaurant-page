@@ -13,4 +13,21 @@ body {
     margin-right: auto;
     width: 1000px;
     height: fit-content;
+    text-align: center;
+}
+
+.navigation-bar, button{
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 10px;
+    
+}
+
+.navigation-bar > button:hover{
+    background-color: rgb(149, 173, 196);
+    transition-duration: 0.4s;
+    
 }
