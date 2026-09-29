@@ -45,14 +45,14 @@ function home(){
         return para;
     }
 
-    const pageLoad = () => {
+    const load = () => {
         headline();
         fancyQuote();
         timing();
         location();
     }
 
-    return { pageLoad };
+    return { load };
 }
 
-export const page = home();
+export const homePage = home();
