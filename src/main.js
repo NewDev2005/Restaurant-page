@@ -1,9 +1,9 @@
-import { page } from "./home.js";
+import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
 
 
 function initialPageLoad(){
-    page.pageLoad();
+    homePage.load();
 }
 
 function enableMenuBtn(){
@@ -16,6 +16,14 @@ function enableMenuBtn(){
     
 }
 
+function enableHomeBtn(){
+    const homeBtn = document.querySelector(".navigation-bar").children[0];
+
+    homeBtn.addEventListener("click", () => {
+        removeAllChildNodes();
+        homePage.load();
+    });
+}
 
 function removeAllChildNodes(){
     const contenDiv = document.querySelector("#content");
@@ -24,4 +32,4 @@ function removeAllChildNodes(){
         contenDiv.removeChild(contenDiv.lastChild);
     }
 }
-export { initialPageLoad, enableMenuBtn };
+export { initialPageLoad, enableHomeBtn, enableMenuBtn };
