@@ -1,5 +1,6 @@
 import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
+import { aboutPage } from "./about.js"
 
 
 function initialPageLoad(){
@@ -25,6 +26,15 @@ function enableHomeBtn(){
     });
 }
 
+function enableAboutBtn(){
+    const aboutBtn = document.querySelector(".navigation-bar").children[2];
+
+    aboutBtn.addEventListener("click", () => {
+        removeAllChildNodes();
+        aboutPage.load();
+    })
+}
+
 function removeAllChildNodes(){
     const contenDiv = document.querySelector("#content");
 
@@ -32,4 +42,4 @@ function removeAllChildNodes(){
         contenDiv.removeChild(contenDiv.lastChild);
     }
 }
-export { initialPageLoad, enableHomeBtn, enableMenuBtn };
+export { initialPageLoad, enableHomeBtn, enableMenuBtn, enableAboutBtn };
