@@ -22,11 +22,16 @@ function menu(){
     const load = () => {
         createMenuHeadline();
         contentDiv.appendChild(createH3("Starters"));
-        contentDiv.appendChild(createParaWithContent("chicken wings"));
-        contentDiv.appendChild(createParaWithContent("crispy corn"));
+        contentDiv.appendChild(createParaWithContent("Chicken salad"));
+        contentDiv.appendChild(createParaWithContent("Asparagus wrapped in bacon"));
+        contentDiv.appendChild(createParaWithContent("Duck, chicken and sour cherry terrine"));
         contentDiv.appendChild(createH3("Main Course"));
-        contentDiv.appendChild(createParaWithContent("Medium steak"));
-        contentDiv.appendChild(createParaWithContent("Texas Brisket"));
+        contentDiv.appendChild(createParaWithContent("Creamy Garlic Shrimp Parmesan"));
+        contentDiv.appendChild(createParaWithContent("Sheldon's meemaw's brisket"));
+        contentDiv.appendChild(createParaWithContent("Deep fried chicken"));
+        contentDiv.appendChild(createH3("Desserts"));
+        contentDiv.appendChild(createParaWithContent("Froot Loops"));
+        contentDiv.appendChild(createParaWithContent("Fancy Pudding"));
     }
 
     return { load };
